@@ -70,3 +70,44 @@ values ('Ыспарта', '25-09-2024 20:07:00','26-09-2024 12:00:00', 'Ыб'),
 ('Ыйджонбу', '13-10-2024 08:07:00','13-10-2024 21:23:00', 'Ыспарта');
 
 select *from Raice
+
+
+create view schedule 
+AS (
+
+	select *from Raice
+
+
+)
+
+select *from schedule
+
+
+create view passanger AS (
+	SELECT *from passangers
+
+)
+
+
+
+
+select *from passanger
+
+
+create view maxpassanger AS (
+	 select MAX(id) as 'qwerty' from passangers
+	 
+)
+
+select *from maxpassanger
+
+
+create view cucucle AS (
+	
+	select airport_arrival from Raice group by airport_arrival
+
+)
+
+select *from cucucle
+
+
